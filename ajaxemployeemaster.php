@@ -97,12 +97,12 @@ if(isset($_POST['search'])!="");
 {
 if (isset($_POST['search'])) {
 
-	if($_POST['search']=="Active")
+	if(isset($_POST['search'])=="Active")
 {
 	$query .="and status=0 ";
 	
 }
-else if($_POST['search']=="Inactive")
+else if(isset($_POST['search'])=="Inactive")
 {
 	$query .="and status=1 ";
 }
@@ -205,7 +205,7 @@ if (isset($_POST['order'])) {
 $query1 = '';
 
 if (isset($_POST['length']) != -1) {
-    $query1 = 'LIMIT ' . isset($_POST['start']) . ', ' . $_POST['length'];
+    $query1 = 'LIMIT ' . isset($_POST['start']) . ', ' . isset($_POST['length']);
 }
 
 $statement = $connect->prepare($query);
@@ -321,8 +321,8 @@ foreach ($result as $row) {
 	}
 	$id          = $row['employeeid'];
 	
-	$action="<a href='student&upd=$id' title='Edit details'><button type='button' class='btn btn-icon btn-sm' title='Edit'><i class='fa fa-edit'></i></button></a>
-	<a href='student&del=$id' title='Edit details'><button type='button' class='btn btn-icon btn-sm js-sweetalert' title='Delete' data-type='confirm'><i class='fa fa-trash-o text-danger'></i></button></a>";
+	$action="<a href='employeemaster&upd=$id' title='Edit details'><button type='button' class='btn btn-icon btn-sm' title='Edit'><i class='fa fa-edit'></i></button></a>
+	<a href='employeemaster&del=$id' title='Edit details'><button type='button' class='btn btn-icon btn-sm js-sweetalert' title='Delete' data-type='confirm'><i class='fa fa-trash-o text-danger'></i></button></a>";
 
 	
 	$sub_array[] = $action;

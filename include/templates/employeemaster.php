@@ -177,49 +177,57 @@ if($idupd>0)
 					</div>
                     <div class="card-body">
                         
-                        <div class="row gutters">
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label >Employee Code <span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="employeecode" name="employeecode" value="<?php if(isset($employeecode )) echo $employeecode ; ?>">
-									<label id="employeecode_valid" class="text-danger" >Enter Employee Code</label>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="disabledInput">Employee Name<span class="required">*</span></label>
-                                    <input type="text" id="employeename" name="employeename" class="form-control"  value="<?php if(isset($employeename )) echo $employeename ; ?>">
-									<label id="employeename_valid" class="text-danger" >Enter Employee Name</label>
-                                </div>
-                            </div>
-			
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="inputEmail">Date Of birth <span class="required">*</span></label>
-                                    <input type="date" class="form-control" id="dateofbirth" name="dateofbirth" value="<?php if(isset($dateofbirth )) echo $dateofbirth ; ?>">
-									<label id="dateofbirth_valid" class="text-danger" >Select Date Of Birth</label>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="disabledInput">Gender <span class="required">*</span></label>
-                                    <select class="form-control " id="gender" name="gender">
-                                        
-                                        <option value=""> Select Gender</option>
-                                        <option <?php if(isset($gender)) { if($gender == "Male" ) echo 'selected'; }  ?> value="Male"> Male</option>
-                                        <option  <?php if(isset($gender)) { if($gender == "Female" ) echo 'selected'; }  ?> value="Female"> FeMale</option>
-                                    </select>
-									<label id="gender_valid" class="text-danger">Select Gender</label>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="row ">
+                           <div class="col-md-8 ">
+                              <div class="row">
+                                   <div class="col-xl-6 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label >Employee Code <span class="required">*</span></label>
+                                                <input type="text" class="form-control" id="employeecode" name="employeecode" value="<?php if(isset($employeecode )) echo $employeecode ; ?>">
+                                                <label id="employeecode_valid" class="text-danger" >Enter Employee Code</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="disabledInput">Employee Name<span class="required">*</span></label>
+                                                <input type="text" id="employeename" name="employeename" class="form-control"  value="<?php if(isset($employeename )) echo $employeename ; ?>">
+                                                <label id="employeename_valid" class="text-danger" >Enter Employee Name</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="inputEmail">Date Of birth <span class="required">*</span></label>
+                                            <input type="date" class="form-control" id="dateofbirth" name="dateofbirth" value="<?php if(isset($dateofbirth )) echo $dateofbirth ; ?>">
+                                            <label id="dateofbirth_valid" class="text-danger" >Select Date Of Birth</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <div class="form-group">
+                                            <label for="disabledInput">Gender <span class="required">*</span></label>
+                                            <select class="form-control " id="gender" name="gender">
+                                                
+                                                <option value=""> Select Gender</option>
+                                                <option <?php if(isset($gender)) { if($gender == "Male" ) echo 'selected'; }  ?> value="Male"> Male</option>
+                                                <option  <?php if(isset($gender)) { if($gender == "Female" ) echo 'selected'; }  ?> value="Female"> FeMale</option>
+                                            </select>
+                                            <label id="gender_valid" class="text-danger">Select Gender</label>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                    <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="inputReadOnly">E-Mail Id <span class="required">*</span></label>
                                     <input class="form-control" id="emailid" name="emailid" type="text" value="<?php if(isset($emailid )) echo $emailid ; ?>">
 									<label id="emailid_valid" class="text-danger" >Enter Email Id</label>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
+                            <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="disabledInput">Designation <span class="required">*</span></label>
                                     <div class="d-flex">
@@ -317,47 +325,63 @@ if($idupd>0)
 										</div>
 										</div>
 									</div>
-                           
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="disabledInput">Employee Number <span class="required">*</span></label>
-                                    <input type="text" id="employeenumber" name="employeenumber" class="form-control"  value="<?php if(isset($employeenumber )) echo $employeenumber ; ?>">
-									<label id="employeenumber_valid" class="text-danger" >Enter Employee Number</label>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="disabledInput">Date Of Joining <span class="required">*</span></label>
-                                    <input type="date" id="dateofjoining" name="dateofjoining" class="form-control" value="<?php if(isset($dateifjoining )) echo $dateofjoining ; ?>">
-									<label id="dateofjoining_valid" class="text-danger" >Select Data Of Joining</label>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group">
-                                    <label for="disabledInput">Contact <span class="required">*</span></label>
-                                    <input type="text" id="contact" name="contact" class="form-control" value="<?php if(isset($contact )) echo $contact ; ?>" >
-									<label id="contact_valid" class="text-danger" >Enter Contact Number</label>
-                                </div>
-                            </div>
-							<div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
-                                <div class="form-group" > 
-                                     <img width="150" style="height:200px; margin: 0px auto;" id="viewimage" >
-                                    <input type="file" class="form-control w-50" accept="image/*" onchange="loadFile(event)" value="<?php if(isset($employeeimage )) echo $employeeimage ; ?>" id="employeeimage" name="employeeimage" >
-									<label id="employeeimage_valid" class="text-danger" >Select Employee Photo</label>
-                                </div>
-                            </div>
-							<script>
-								var loadFile = function(event) {
-									var image = document.getElementById("viewimage");
-									image.src = URL.createObjectURL(event.target.files[0]);
-								};
-							</script>
-                            
-                        </div>
 
+                            
+                                        
+                                  
+                                   </div>
+                                   </div>      
+                                   <div class="col-md-4">
+                                   <div class="col-xl-12 col-lglg-4 col-md-6 col-sm-6 col-12 mx-auto">
+                                            <div class="form-group" > 
+                                                <img width="150" style="height:200px; margin: 0px auto;" id="viewimage" >
+                                                <input type="file" class="form-control w-50" accept="image/*" onchange="loadFile(event)" value="<?php if(isset($employeeimage )) echo $employeeimage ; ?>" id="employeeimage" name="employeeimage" >
+                                                <label id="employeeimage_valid" class="text-danger" >Select Employee Photo</label>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            var loadFile = function(event) {
+                                                var image = document.getElementById("viewimage");
+                                                image.src = URL.createObjectURL(event.target.files[0]);
+                                            };
+                                        </script>
+                                   
+                                   </div>
+                              </div>
+                           
+			            
+
+
+                        <div class="row">
+                        <div class="col-xl-4 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="disabledInput">Employee Number <span class="required">*</span></label>
+                                                <input type="text" id="employeenumber" name="employeenumber" class="form-control"  value="<?php if(isset($employeenumber )) echo $employeenumber ; ?>">
+                                                <label id="employeenumber_valid" class="text-danger" >Enter Employee Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="disabledInput">Date Of Joining <span class="required">*</span></label>
+                                                <input type="date" id="dateofjoining" name="dateofjoining" class="form-control" value="<?php if(isset($dateifjoining )) echo $dateofjoining ; ?>">
+                                                <label id="dateofjoining_valid" class="text-danger" >Select Data Of Joining</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xl-4 col-lglg-4 col-md-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="disabledInput">Contact <span class="required">*</span></label>
+                                                <input type="text" id="contact" name="contact" class="form-control" value="<?php if(isset($contact )) echo $contact ; ?>" >
+                                                <label id="contact_valid" class="text-danger" >Enter Contact Number</label>
+                                            </div>
+                                        </div>
+                            
+                                        </div>
+                        </div>
+                       
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="card">
 					<div class="card-header">
@@ -365,7 +389,7 @@ if($idupd>0)
 					</div>
                     <div class="card-body">
                         
-                        <div class="row gutters">
+                        <div class="row ">
                           
                             <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
                                 <div class="form-group">
@@ -380,6 +404,9 @@ if($idupd>0)
                                     <input type="text" class="form-control" id="starrating" name="starrating" placeholder="Star Rating" value="<?php if(isset($starrating )) echo $starrating ; ?>">
 									<label id="starrating_valid" class="text-danger">Enter Star Rating</label>
                                 </div>
+                            </div>
+                            <div class="col-xl-4 col-lglg-4 col-md-4 col-sm-4 col-12">
+                                
                             </div>
                           
                             
@@ -530,6 +557,8 @@ if($idupd>0)
                                 <th>  <div class="form-group">
                                     <select class="form-control form-control-lg" id="institutetype1" name="institutetype1">
                                         <option>Select Institute Type</option>
+                                        <option  <?php if(isset($institutetype1)) { if($institutetype1 == "Technical" ) echo 'selected'; }  ?> value="Technical">Technical </option>
+                                        <option  <?php if(isset($institutetype1)) { if($institutetype1 == "NonTechnical" ) echo 'selected'; }  ?> value="NonTechnical">NonTechnical </option>
                                     </select>
                                 </div></th>
                                 <td> <input type="text" id="name1" name="name1" class="form-control"  value="<?php if(isset($name1 )) echo $name1 ; ?>"></td>
@@ -543,6 +572,8 @@ if($idupd>0)
                                 <th>  <div class="form-group">
                                     <select class="form-control form-control-lg" id="institutetype2" name="institutetype2">
                                         <option>Select Institute Type</option>
+                                        <option  <?php if(isset($institutetype2)) { if($institutetype2 == "Technical" ) echo 'selected'; }  ?> value="Technical">Technical </option>
+                                        <option  <?php if(isset($institutetype2)) { if($institutetype2 == "NonTechnical" ) echo 'selected'; }  ?> value="NonTechnical">NonTechnical </option>
                                     </select>
                                 </div></th>
                                 <td> <input type="text" id="name2" name="name2" class="form-control"  value="<?php if(isset($name2 )) echo $name2 ; ?>"></td>
@@ -556,6 +587,8 @@ if($idupd>0)
                                 <th>  <div class="form-group">
                                     <select class="form-control form-control-lg" id="institutetype3" name="institutetype3">
                                         <option>Select Institute Type</option>
+                                        <option  <?php if(isset($institutetype3)) { if($institutetype3 == "Technical" ) echo 'selected'; }  ?> value="Technical">Technical </option>
+                                        <option  <?php if(isset($institutetype3)) { if($institutetype3 == "NonTechnical" ) echo 'selected'; }  ?> value="NonTechnical">NonTechnical </option>
                                     </select>
                                 </div></th>
                                 <td> <input type="text" id="name3" name="name3" class="form-control"  value="<?php if(isset($name3 )) echo $name3 ; ?>"></td>
@@ -569,6 +602,8 @@ if($idupd>0)
                                 <th>  <div class="form-group">
                                     <select class="form-control form-control-lg" id="institutetype4" name="institutetype4">
                                         <option>Select Institute Type</option>
+                                        <option  <?php if(isset($institutetype4)) { if($institutetype4 == "Technical" ) echo 'selected'; }  ?> value="Technical">Technical </option>
+                                        <option  <?php if(isset($institutetype4)) { if($institutetype4 == "NonTechnical" ) echo 'selected'; }  ?> value="NonTechnical">NonTechnical </option>
                                     </select>
                                 </div></th>
                                 <td> <input type="text" id="name4" name="name4" class="form-control"  value="<?php if(isset($name4 )) echo $name4 ; ?>"></td>
@@ -582,6 +617,8 @@ if($idupd>0)
                                 <th> <div class="form-group w-100">
 										<select class="form-control form-control-lg" id="institutetype5" name="institutetype5">
 											<option>Select Institute Type</option>
+                                            <option  <?php if(isset($institutetype5)) { if($institutetype5 == "Technical" ) echo 'selected'; }  ?> value="Technical">Technical </option>
+                                        <option  <?php if(isset($institutetype5)) { if($institutetype5 == "NonTechnical" ) echo 'selected'; }  ?> value="NonTechnical">NonTechnical </option>
 										</select>
                                     </div>
 							    </th>
